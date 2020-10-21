@@ -39,3 +39,7 @@ def make_some_thing(task):
     elif 'stop' in task:
         talk('Okay!')
         sys.exit()
+
+
+while True:
+    make_some_thing(cmd())
