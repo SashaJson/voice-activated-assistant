@@ -29,3 +29,13 @@ def cmd():
         task = cmd()
 
     return task
+
+
+def make_some_thing(task):
+    if 'open this repository in website GitHub' in task:
+        task('Already opening')
+        url = 'https://github.com/SashaJson/voice-activated-assistant'
+        webbrowser.open(url)
+    elif 'stop' in task:
+        talk('Okay!')
+        sys.exit()
